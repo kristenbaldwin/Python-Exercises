@@ -28,7 +28,7 @@ while play_again == "Y":
 
     while True:
         if play_again == "Y":
-            number_guess = 5
+            number_of_guesses = 5
             break
         elif play_again == "N":
             print("Bye!")
