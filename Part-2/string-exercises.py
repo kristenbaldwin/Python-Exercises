@@ -43,7 +43,6 @@ print(word)
 
 # Exercise 6
 
-plain = "abcdefghijklmnopqrstuvwxyz"
 cipher_text = "lbh zhfg hayrnea jung lbh unir yrnearq"
 offset = 13
 decoded = ""
