@@ -22,21 +22,18 @@ with open(file_name, 'r') as fh:
       
     }
 
-    for i in range(0,len(word)):
-        char = word[i:i + 1]
+    for char in word:
         letter_dict[char] = word.count(char)
     print(letter_dict)
 
     phrase = contents
-    word_histogram = []
     word_dict = {
       
     }
     word_histogram = phrase.split()
 
-    for i in range(0,len(word_histogram)):
-        word_dict[word_histogram[i]] = phrase.count(word_histogram[i])
-
+    for word in word_histogram:
+        word_dict[word] = phrase.count(word)
     print(word_dict)
 
 # Exercise 4
