@@ -52,25 +52,20 @@ letter_dict = {
       
 }
 
-for i in range(0,len(word)):
-    char = word[i:i + 1]
+for char in word:
     letter_dict[char] = word.count(char)
-
 print(letter_dict)
 
 # Word Summary
 
 phrase = input("Pick a phrase: ")
-word_histogram = []
 word_dict = {
       
 }
 word_histogram = phrase.split()
-#print(word_histogram)
 
-for i in range(0,len(word_histogram)):
-    word_dict[word_histogram[i]] = phrase.count(word_histogram[i])
-
+for word in word_histogram:
+    word_dict[word] = phrase.count(word)
 print(word_dict)
 
 # Bonus
