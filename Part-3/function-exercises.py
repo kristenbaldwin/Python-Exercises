@@ -128,8 +128,8 @@ again(play_again)
 play_again = input("Do you want to play again (Y or N)? ")
 
 while play_again != "Y" and play_again != "N":
-        print("Invalid input.")
-        play_again = input("Do you want to play again (Y or N)? ")
+    print("Invalid input.")
+    play_again = input("Do you want to play again (Y or N)? ")
 
 def again(x):
     if x == "Y":

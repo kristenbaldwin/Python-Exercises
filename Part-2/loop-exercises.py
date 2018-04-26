@@ -5,10 +5,10 @@ for number in range(1, 11):
 
 # Exercise 2
 
-print("Start from: 2")
-print("End on: 8")
-for number in range(2, 9):
-    print(number)
+start = int(input("Start from: "))
+end = int(input("End on: "))
+for number in range(start, end + 1):
+  print(number)
 
 # Exercise 3
 
@@ -62,10 +62,8 @@ for i in range(0, 4):
 
 height = int(input("Height? "))
 lines = 0
-empty = 0
 for i in range(0, height):
     lines += 1
-    empty += 1
     blank_space = height - lines
     increase_char = lines + (lines - 1)
     print(" " * blank_space, "*" * increase_char, sep="")
